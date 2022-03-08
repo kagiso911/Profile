@@ -1,0 +1,24 @@
+import React from 'react';
+import GlobalStyle from './globalStyles';
+import Home from './pages/HomePage/Home';
+
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
+import { Navbar, Footer } from './components';
+
+function App() {
+  return (
+    <Router>
+      <GlobalStyle />
+      <ScrollToTop />
+      <Navbar />
+        <Home/>
+      <Switch>
+       
+      </Switch>
+      <Footer />
+    </Router>
+  );
+}
+
+export default App;
